@@ -21,7 +21,7 @@ jenkins_plugins_state: present
 jenkins_plugin_updates_expiration: 86400
 jenkins_plugin_timeout: 30
 
-jenkins_admin_username: admin
+jenkins_admin_username: jhammell
 jenkins_admin_password: admin
 jenkins_admin_password_file: ""
 jenkins_admin_token: ""
