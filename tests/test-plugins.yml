@@ -13,5 +13,5 @@
     - include: java-8.yml
 
   roles:
-    - geerlingguy.java
+    - jhammell.java
     - role_under_test
