@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - jhammell.java
+  - ansiblebit.oracle-java
 
 galaxy_info:
   author: geerlingguy
