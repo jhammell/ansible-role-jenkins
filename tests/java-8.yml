@@ -1,8 +1,8 @@
 ---
 # Ubuntu.
-- name: Add repository for OpenJDK 8 (Ubuntu 14).
-  apt_repository: repo='ppa:openjdk-r/ppa'
-  when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "14.04"
+- name: Add repository for OpenJDK 8 (Ubuntu 16).
+  apt_repository: repo='ppa:webupd8team/java'
+  when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "16.04"
 
 # Debian.
 - name: Enable Backports repository (Debian 8).
@@ -31,19 +31,19 @@
 - name: Set the java_packages variable (RedHat).
   set_fact:
     java_packages:
-      - java-1.8.0-openjdk
+      - oracle-java8-installer
   when: ansible_os_family == 'RedHat'
 
 # Ubuntu.
 - name: Set the java_packages variable (Ubuntu).
   set_fact:
     java_packages:
-      - openjdk-8-jdk
+      - oracle-java8-installer
   when: ansible_distribution == 'Ubuntu'
 
 # Debian.
 - name: Set the java_packages variable (Debian).
   set_fact:
     java_packages:
-      - openjdk-8-jdk
+      - oracle-java8-installer
   when: ansible_distribution == 'Debian'

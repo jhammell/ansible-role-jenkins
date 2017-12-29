@@ -11,5 +11,5 @@
       changed_when: false
 
   roles:
-    - jhammell.java
+    - ansiblebit.oracle-java
     - role_under_test
